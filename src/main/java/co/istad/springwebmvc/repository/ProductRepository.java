@@ -1,7 +1,7 @@
 package co.istad.springwebmvc.repository;
 
-import org.springframework.stereotype.Repository;
-
-@Repository
-public interface ProductRepository {
+import co.istad.springwebmvc.model.Product;
+import org.springframework.data.jpa.repository.JpaRepository;
+public interface ProductRepository extends JpaRepository<Product,Integer> {
+    Product findByUuid(String uuid);
 }

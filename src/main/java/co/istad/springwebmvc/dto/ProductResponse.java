@@ -1,6 +1,6 @@
 package co.istad.springwebmvc.dto;
 
-public record ProductDto(
+public record ProductResponse(
         String uuid,
         String name,
         Double price,
